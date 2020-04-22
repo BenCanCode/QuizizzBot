@@ -7,9 +7,9 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import TimeoutException, NoSuchElementException, WebDriverException
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 #-------------------------------------------------------------------------#
-global enabled
+enabled = None
 def randdelaygen(base,tf):
-    if tf==True:
+    if tf:
         mult=random.randint(15,50)
         delay=base+mult/10
     else:
