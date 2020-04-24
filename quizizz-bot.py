@@ -92,7 +92,7 @@ def play(gamecode, name, randdelay):
     answers = find_answers(GameID)
     print("[info] answers found")
     time.sleep(2);
-    while True:
+    while 1:
         try:
             try:
                 waitForItem(driver,'.question-text-color',timeout=20)
